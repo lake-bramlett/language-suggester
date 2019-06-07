@@ -16,6 +16,10 @@
       <div class="row">
         <div class="col-6">
           <form id="user-input" action="index.html" method="post">
+            <label for="user-name">Your Name:</label>
+            <input id="user-name" type="text">
+            <label for="user-age">Your age:</label>
+            <input id="user-age" type="number">
             <h4>Which Company do you Prefer?</h4>
             <div class="radio">
               <label>
@@ -25,14 +29,20 @@
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="company" value="micosoft">
-                Micosoft
+                <input type="radio" name="company" value="microsoft">
+                Microsoft
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="company" value="apple">
                 Apple
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="company" value="none">
+                None of the Above
               </label>
             </div>
             <h4>Do you Want to Manually Manage your App's Memory Usage?</h4>
@@ -48,6 +58,38 @@
                 No way!
               </label>
             </div>
+            <h4>Which Would You Pick as Your Programming Spirit Animal?</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="mascot" value="gopher">
+                A Gopher
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="mascot" value="snake">
+                A Snake
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="mascot" value="snake">
+                A Bird
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="mascot" value="ruby">
+                A Gemstone (how is that even an animal?)
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="mascot" value="none">
+                None of the above
+              </label>
+            </div>
+            <button class="btn" type="button" name="button">Submit!</button>
           </form>
         </div>
         <div class="col-6 col-results">

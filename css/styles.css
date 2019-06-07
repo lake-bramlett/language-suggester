@@ -1,3 +1,8 @@
 .col-results {
   background-color: blue;
 }
+
+.btn {
+  background-color: teal;
+  color: white;
+}
