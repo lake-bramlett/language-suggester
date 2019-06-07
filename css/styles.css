@@ -1,5 +1,5 @@
-.col-results {
-  background-color: blue;
+.col-results .results div {
+  display: none;
 }
 
 .btn {
