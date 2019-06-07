@@ -52,16 +52,19 @@ function getCompany(company) {
   console.log('data gathered: user prefers: ' + company)
 
   if (company === 'google') {
-    goTotal ++;
+    goTotal += 2;
   } else if (company === 'microsoft') {
-    cTotal ++;
+    cTotal += 2;
   } else if (company === 'apple') {
-    swiftTotal ++;
+    swiftTotal +=2;
   } else {
     jsTotal ++;
     rubyTotal ++;
     pythonTotal ++;
     rustTotal ++;
+    goTotal --;
+    cTotal --;
+    swiftTotal --;
   };
 };
 
@@ -86,17 +89,37 @@ function getMascot(mascot) {
   console.log('data gathered: mascot: ' + mascot);
 
   if (mascot === 'gopher') {
-    goTotal ++;
+    goTotal += 2;
   } else if (mascot === 'snake') {
-    pythonTotal ++;
+    pythonTotal += 2;
   } else if (mascot === 'bird') {
-    swiftTotal ++;
+    swiftTotal += 2;
   } else if (mascot === 'ruby') {
-    rubyTotal ++;
+    rubyTotal += 2;
   } else {
     jsTotal ++;
     cTotal ++;
     rustTotal ++;
+    goTotal --;
+    swiftTotal --;
+    pythonTotal --;
+    rubyTotal --;
+  };
+};
+
+function getFrontBack(frontBack) {
+  var frontBack = $("input:radio[name=front-back]:checked").val();
+  console.log('data gathered: front end or back end: ' + frontBack);
+
+  if (frontBack === 'front') {
+    jsTotal ++;
+    swiftTotal ++;
+    rustTotal ++;
+  } else if (frontBack === 'back') {
+    cTotal ++;
+    goTotal ++;
+    pythonTotal ++;
+    rubyTotal ++;
   };
 };
 
@@ -155,6 +178,7 @@ $('button.btn').click(function() {
   getCompany();
   getMemory();
   getMascot();
+  getFrontBack();
 
   logTotals();
 
