@@ -113,10 +113,11 @@ function getFrontBack(frontBack) {
   console.log('data gathered: front end or back end: ' + frontBack);
 
   if (frontBack === 'front') {
-    jsTotal ++;
+    jsTotal += 2;
     swiftTotal ++;
     rustTotal ++;
   } else if (frontBack === 'back') {
+    jsTotal ++;
     cTotal ++;
     goTotal ++;
     pythonTotal ++;
@@ -142,14 +143,17 @@ function getResults() {
       console.log('swift is suggested');
       $('.col-results .results .swift').show()
       $('.col-results .results .swift div.iframe').show().append().html('<iframe src="https://en.wikipedia.org/wiki/Swift_(programming_language)"></iframe>');
+      $('body').css('background-color','#f05138');
     } else if (goTotal > cTotal && goTotal > pythonTotal && goTotal > rubyTotal && goTotal > jsTotal && goTotal > rustTotal && goTotal > swiftTotal) {
       console.log('go is suggested');
       $('.col-results .results .golang').show();
       $('.col-results .results .golang div.iframe').show().append().html('<iframe src="https://en.wikipedia.org/wiki/Go_(programming_language)"></iframe>');
+      $('body').css('background-color','#5adaff');
     } else if (cTotal > pythonTotal && cTotal > rubyTotal && cTotal > jsTotal && cTotal > rustTotal && cTotal > swiftTotal && cTotal > goTotal) {
       console.log('c# is suggested');
       $('.col-results .results .c-sharp').show();
       $('.col-results .results .c-sharp div.iframe').show().append().html('<iframe src="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)"></iframe>');
+      $('body').css('background-color','#a179dc');
     } else if (pythonTotal > rubyTotal && pythonTotal > cTotal && pythonTotal > jsTotal && pythonTotal > goTotal && pythonTotal > swiftTotal && pythonTotal > rustTotal) {
       console.log('python is suggested');
       $('.col-results .results .python').show();
