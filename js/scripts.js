@@ -97,14 +97,16 @@ function getMascot(mascot) {
     swiftTotal += 2;
   } else if (mascot === 'ruby') {
     rubyTotal += 2;
+  } else if (mascot === 'rust') {
+    rustTotal +=2;
   } else {
     jsTotal ++;
     cTotal ++;
-    rustTotal ++;
     goTotal --;
     swiftTotal --;
     pythonTotal --;
     rubyTotal --;
+    rustTotal --;
   };
 };
 
@@ -134,11 +136,13 @@ function getResults() {
   if (jsTotal > rustTotal && jsTotal > swiftTotal && jsTotal > goTotal && jsTotal > cTotal && jsTotal > pythonTotal && jsTotal > rubyTotal) {
       console.log('javascript is suggested');
       $('.col-results .results .javascript').show();
-      $('.col-results .results .jacascript div.iframe').show().append().html('<iframe src="https://en.wikipedia.org/wiki/JavaScript"></iframe>');
+      $('.col-results .results .javascript div.iframe').show().append().html('<iframe src="https://en.wikipedia.org/wiki/JavaScript"></iframe>');
+      $('body').css('background-color','#fdd939');
     } else if (rustTotal > swiftTotal && rustTotal > goTotal && rustTotal > cTotal && rustTotal > pythonTotal && rustTotal > rubyTotal && rustTotal > jsTotal) {
       console.log('rust is suggested');
       $('.col-results .results .rust').show();
       $('.col-results .results .rust div.iframe').show().append().html('<iframe src="https://en.wikipedia.org/wiki/Rust_(programming_language)"></iframe>');
+      $('body').css('backgound-color','#696969');
     } else if (swiftTotal > goTotal && swiftTotal > cTotal && swiftTotal > pythonTotal && swiftTotal > rubyTotal && swiftTotal > jsTotal && swiftTotal > rustTotal) {
       console.log('swift is suggested');
       $('.col-results .results .swift').show()
@@ -158,6 +162,7 @@ function getResults() {
       console.log('python is suggested');
       $('.col-results .results .python').show();
       $('.col-results .results .python div.iframe').show().append().html('<iframe src="https://en.wikipedia.org/wiki/Python_(programming_language)"></iframe>');
+      $('body').css('background-color','#0f3d5ca8');
     } else if (rubyTotal > jsTotal && rubyTotal > pythonTotal && rubyTotal > swiftTotal && rubyTotal > goTotal && rubyTotal > cTotal && rubyTotal > rustTotal) {
       console.log('ruby is suggested');
       $('.col-results .results .ruby').show();
