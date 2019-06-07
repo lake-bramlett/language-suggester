@@ -124,6 +124,13 @@ function getFrontBack(frontBack) {
 };
 
 function getResults() {
+
+  getAge();
+  getCompany();
+  getMemory();
+  getMascot();
+  getFrontBack();
+
   var userName = $('#user-name').val();
   $('.results .name').text(userName);
   $('.results').show();
@@ -163,6 +170,8 @@ function getResults() {
     };
 
 }
+//end business logic
+
 
 //user interface logic (jquery)
 $(document).ready(function() {
@@ -174,12 +183,6 @@ $('button.btn').click(function() {
   $('.col-results .results div').hide();
   $('.copy').show();
 
-  getAge();
-  getCompany();
-  getMemory();
-  getMascot();
-  getFrontBack();
-
   logTotals();
 
   getResults();
@@ -187,3 +190,4 @@ $('button.btn').click(function() {
 
   });
 });
+//end unser interface logic

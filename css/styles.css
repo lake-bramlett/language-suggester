@@ -1,11 +1,12 @@
 body {
+  background-image: url(../img/cartographer-bg.png);
   background-color: #c2bfbf;
   font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
   text-align: center;
-  margin: 2rem 0rem 4rem 0rem;
+  margin: 3%;
   letter-spacing: 3px;
   text-transform: lowercase;
 }
