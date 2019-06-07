@@ -1,5 +1,52 @@
+body {
+  background-color: #c2bfbf;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+h5 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+img {
+  width: 50px;
+}
+
+iframe {
+  width: 100%;
+  min-height: 25rem;
+}
+
+.results {
+  display: none;
+  background-color: #ffffff;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  padding: 10px;
+}
+
 .col-results .results div {
   display: none;
+}
+
+.question {
+  background-color: #ffffff;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  margin-bottom: 5px;
 }
 
 .btn {
@@ -7,10 +54,6 @@
   color: white;
 }
 
-h4 {
-  font-size: 15px;
-  font-weight: 700;
-}
 
 .copy {
   font-size: 1.8rem;

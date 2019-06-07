@@ -103,7 +103,7 @@ function getMascot(mascot) {
 function getResults() {
   var userName = $('#user-name').val();
   $('.results .name').text(userName);
-  $('.results .copy').show();
+  $('.results').show();
 
   if (jsTotal > rustTotal && jsTotal > swiftTotal && jsTotal > goTotal && jsTotal > cTotal && jsTotal > pythonTotal && jsTotal > rubyTotal) {
       console.log('javascript is suggested');

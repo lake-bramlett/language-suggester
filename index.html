@@ -6,135 +6,147 @@
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <div class="container">
-      <div class="row">
         <h1>Which Programming Language is for You?</h1>
-      </div>
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <form id="user-input" action="index.html" method="post">
             <label for="user-name">Your Name:</label>
             <input id="user-name" type="text">
             <label for="user-age">Your age:</label>
             <input id="user-age" type="text">
-            <h4>Which Company do you Prefer?</h4>
-            <div class="radio">
-              <label>
-                <input type="radio" name="company" value="google" checked>
-                Google
-              </label>
+            <div class="question q1">
+              <h4>Which Company do you Prefer?</h4>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="company" value="google" checked>
+                  Google
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="company" value="microsoft">
+                  Microsoft
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="company" value="apple">
+                  Apple
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="company" value="none">
+                  None of the Above
+                </label>
+              </div>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="company" value="microsoft">
-                Microsoft
-              </label>
+            <div class="question q2">
+              <h4>Do you Want to Manually Manage your App's Memory Usage?</h4>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="memory" value="yes">
+                  Yes, please!
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="memory" value="no">
+                  No way!
+                </label>
+              </div>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="company" value="apple">
-                Apple
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="company" value="none">
-                None of the Above
-              </label>
-            </div>
-            <h4>Do you Want to Manually Manage your App's Memory Usage?</h4>
-            <div class="radio">
-              <label>
-                <input type="radio" name="memory" value="yes">
-                Yes, please!
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="memory" value="no">
-                No way!
-              </label>
-            </div>
-            <h4>Which Would You Pick as Your Programming Spirit Animal?</h4>
-            <div class="radio">
-              <label>
-                <input type="radio" name="mascot" value="gopher">
-                A Gopher
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="mascot" value="snake">
-                A Snake
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="mascot" value="bird">
-                A Bird
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="mascot" value="ruby">
-                A Gemstone (how is that even an animal?)
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="mascot" value="none">
-                None of the above
-              </label>
+            <div class="question q3">
+              <h4>Which Would You Pick as Your Programming Spirit Animal?</h4>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="mascot" value="gopher">
+                  A Gopher
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="mascot" value="snake">
+                  A Snake
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="mascot" value="bird">
+                  A Bird
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="mascot" value="ruby">
+                  A Gemstone (how is that even an animal?)
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="mascot" value="none">
+                  None of the above
+                </label>
+              </div>
             </div>
             <button class="btn" type="button" name="button">Submit!</button>
           </form>
         </div>
-        <div class="col-6 col-results">
+        <div class="col-12 col-lg-6 col-results">
           <div class="results">
             <div class="copy">
               <h2><span class="name"></span>, based on your answers, may I suggest that you try:
             </div>
             <div class="ruby">
               <h5>Ruby</h5>
+              <img src="img/ruby.png" alt="ruby icon">
               <div class="iframe">
                 <!-- iframe will be generated here -->
               </div>
             </div>
             <div class="javascript">
               <h5>JavaScript</h5>
+              <img src="img/js.png" alt="js icon">
               <div class="iframe">
                 <!-- iframe will be generated here -->
               </div>
             </div>
             <div class="c-sharp">
               <h5>C#</h5>
+              <img src="img/c.png" alt="c icon">
               <div class="iframe">
                 <!-- iframe will be generated here -->
               </div>
             </div>
             <div class="golang">
               <h5>Go</h5>
+              <img src="img/go.png" alt="go icon">
               <div class="iframe">
                 <!-- iframe will be generated here -->
               </div>
             </div>
             <div class="python">
               <h5>Python</h5>
+              <img src="img/python.png" alt="python icon">
               <div class="iframe">
                 <!-- iframe will be generated here -->
               </div>
             </div>
             <div class="rust">
               <h5>Rust</h5>
+              <img src="img/rust.png" alt="rust icon">
               <div class="iframe">
                 <!-- iframe will be generated here -->
               </div>
             </div>
             <div class="swift">
               <h5>Swift</h5>
+              <img src="img/swift.png" alt="swift icon">
               <div class="iframe">
                 <!-- iframe will be generated here -->
               </div>
