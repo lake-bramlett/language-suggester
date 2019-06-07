@@ -6,7 +6,7 @@
 
 ## Description
 
-_A client-based application that take user input data and makes a suggestion of a programming language that may interest them based on their answers._
+_A client-based application that take user input data and makes a suggestion of a programming language that may interest them based on their answers. Visit https://lake-bramlett.github.io/language-suggester for the hosted page._
 
 ## Setup/Installation Requirements
 
