@@ -149,6 +149,7 @@ $('button.btn').click(function() {
 
   resetTotals();
   $('.col-results .results div').hide();
+  $('.copy').show();
 
   getAge();
   getCompany();

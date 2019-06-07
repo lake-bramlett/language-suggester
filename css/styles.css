@@ -30,16 +30,24 @@ iframe {
   min-height: 25rem;
 }
 
+.user-name, .user-age {
+  font-weight: 700;
+}
+
+#user-name, #user-age {
+  width: 25%;
+}
+
+.col-12 {
+  margin-bottom: 20px;
+}
+
 .results {
   display: none;
   background-color: #ffffff;
   border: 1px solid lightgrey;
   border-radius: 20px;
   padding: 10px;
-}
-
-.col-results .results div {
-  display: none;
 }
 
 .question {
@@ -50,11 +58,17 @@ iframe {
 }
 
 .btn {
-  background-color: teal;
+  background-color: #000000;
+  text-transform: uppercase;
   color: white;
 }
 
-
 .copy {
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 991px) {
+  .row {
+    text-align: center;
+  }
 }
