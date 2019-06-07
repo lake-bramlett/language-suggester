@@ -21,6 +21,15 @@ function logTotals() {
   console.log('pythonTotal: ' + pythonTotal);
 };
 
+function resetTotals() {
+  jsTotal = 0;
+  rubyTotal = 0;
+  swiftTotal = 0;
+  goTotal = 0;
+  rustTotal = 0;
+  cTotal = 0;
+  pythonTotal = 0;
+};
 
 function getAge(age) {
   var age = parseInt($('#user-age').val());
@@ -91,19 +100,10 @@ function getMascot(mascot) {
   };
 };
 
-
-//user interface logic (jquery)
-$(document).ready(function() {
-console.log('jquery is enabled');
-
-$('button.btn').click(function() {
-
-  getAge();
-  getCompany();
-  getMemory();
-  getMascot();
-
-  logTotals();
+function getResults() {
+  var userName = $('#user-name').val();
+  $('.results .name').append(userName);
+  $('.results .copy').show();
 
   if (jsTotal > rustTotal && jsTotal > swiftTotal && jsTotal > goTotal && jsTotal > cTotal && jsTotal > pythonTotal && jsTotal > rubyTotal) {
       console.log('javascript is suggested');
@@ -128,9 +128,28 @@ $('button.btn').click(function() {
       $('.col-results .results .ruby').show();
     } else {
       console.log('multiple languages are suggested');
-      $('.col-results .results .ruby').show();
+      $('.col-results .results .mutliple').show();
     };
 
+}
+
+//user interface logic (jquery)
+$(document).ready(function() {
+console.log('jquery is enabled');
+
+$('button.btn').click(function() {
+
+  resetTotals();
+  $('.col-results .results div').hide();
+
+  getAge();
+  getCompany();
+  getMemory();
+  getMascot();
+
+  logTotals();
+
+  getResults();
 
 
   });
