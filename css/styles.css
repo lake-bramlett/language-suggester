@@ -6,3 +6,12 @@
   background-color: teal;
   color: white;
 }
+
+h4 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.copy {
+  font-size: 1.8rem;
+}
