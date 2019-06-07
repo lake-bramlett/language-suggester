@@ -22,6 +22,7 @@ function logTotals() {
 };
 
 function resetTotals() {
+  $('.col-results .results div').hide();
   jsTotal = 0;
   rubyTotal = 0;
   swiftTotal = 0;
@@ -125,12 +126,6 @@ function getFrontBack(frontBack) {
 
 function getResults() {
 
-  getAge();
-  getCompany();
-  getMemory();
-  getMascot();
-  getFrontBack();
-
   var userName = $('#user-name').val();
   $('.results .name').text(userName);
   $('.results').show();
@@ -165,8 +160,8 @@ function getResults() {
       $('.col-results .results .ruby div.iframe').show().append().html('<iframe src="https://en.wikipedia.org/wiki/Ruby_(programming_language)"></iframe>');
     } else {
       console.log('multiple languages are suggested');
-      $('.col-results .results .mutliple').show();
-      $('.col-results .results .multiple div.iframe').show().append().html('<iframe src="https://en.wikipedia.org/wiki/Programming_language"></iframe>');
+      $('.col-results .results .multiple').show();
+      $('.col-results .results .multiple div.iframe').show().append().html('<iframe src="https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites"></iframe>');
     };
 
 }
@@ -182,6 +177,12 @@ $('button.btn').click(function() {
   resetTotals();
   $('.col-results .results div').hide();
   $('.copy').show();
+
+  getAge();
+  getCompany();
+  getMemory();
+  getMascot();
+  getFrontBack();
 
   logTotals();
 
